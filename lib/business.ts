@@ -1,9 +1,15 @@
+/** Single source of truth for Doherty Electrical contact details. */
+export const PHONE = {
+  display: "+353 87 248 6193",
+  href: "tel:+353872486193",
+  example: "087 248 6193",
+} as const;
+
 export const business = {
   name: "Doherty Electrical",
-  phone: "+353 1 496 2841",
-  phoneHref: "tel:+35314962841",
-  emergencyPhone: "+353 87 248 6193",
-  emergencyPhoneHref: "tel:+353872486193",
+  phone: PHONE.display,
+  phoneHref: PHONE.href,
+  phoneExample: PHONE.example,
   email: "info@dohertyelectrical.ie",
   emailHref: "mailto:info@dohertyelectrical.ie",
   address: "14 Ballymount Drive, Walkinstown, Dublin 12, D12 XY4F",
@@ -15,4 +21,4 @@ export const business = {
     "Wicklow",
     "Louth",
   ],
-};
+} as const;

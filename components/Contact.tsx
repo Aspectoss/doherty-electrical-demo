@@ -89,7 +89,7 @@ export default function Contact() {
         <SectionHeader
           label="Contact us"
           title="Get your free quote"
-          description="Fill in the form and we'll get back to you with a no-obligation quote. For emergencies, call us directly. We're available 24/7."
+          description={`Fill in the form and we'll get back to you with a no-obligation quote. For emergencies, call ${business.phone}. We're available 24/7.`}
           align="left"
         />
 

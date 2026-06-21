@@ -79,7 +79,7 @@ export default function Hero() {
             <Link href="#quote" className={btnPrimary}>
               Get a Free Quote
             </Link>
-            <a href={business.emergencyPhoneHref} className={btnSecondary}>
+            <a href={business.phoneHref} className={btnSecondary}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"

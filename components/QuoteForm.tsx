@@ -1,5 +1,6 @@
 "use client";
 
+import { business } from "@/lib/business";
 import { cardPadding } from "@/lib/sectionStyles";
 import { FormEvent, useState } from "react";
 
@@ -77,7 +78,7 @@ export default function QuoteForm() {
           required
           autoComplete="tel"
           className="mt-2 block w-full rounded-md border border-[#0f2742]/20 px-4 py-3 text-sm text-[#0f2742] placeholder:text-[#0f2742]/40 focus:border-[#f5a623] focus:outline-none focus:ring-2 focus:ring-[#f5a623]/30 sm:text-base"
-          placeholder="087 248 6193"
+          placeholder={business.phoneExample}
         />
       </div>
 
